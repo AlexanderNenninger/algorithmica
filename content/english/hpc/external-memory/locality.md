@@ -100,7 +100,7 @@ Surprisingly, there is still some room for improvement, and we will come back to
 
 ### Sparse Table
 
-*Sparse table* is a *static* data structure that is often used for solving the *static RMQ* problem and computing any similar *idempotent range reductions* in general. It can be formally defined as a two-dimensional array of size $\log n \times n$:
+*Sparse table* is a *static* data structure that is often used for solving the [*static RMQ*](https://en.wikipedia.org/wiki/Range_minimum_query) problem and computing any similar *idempotent range reductions* in general. It can be formally defined as a two-dimensional array of size $\log n \times n$:
 
 $$
 t[k][i] = \min \{ a_i, a_{i+1}, \ldots, a_{i+2^k-1} \}
