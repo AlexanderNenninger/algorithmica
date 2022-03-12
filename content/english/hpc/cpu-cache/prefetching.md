@@ -3,7 +3,7 @@ title: Prefetching
 weight: 6
 ---
 
-Taking advantage of the [free concurrency](../mlp) available in memory hardware, it can be beneficial to *prefetch* data that is likely to be accessed next if its location can be predicted. This is easy to do when there are no [data of control hazards](/hpc/pipelining/hazards) in the pipeline and the CPU can just run ahead of the instruction stream and execute memory operations out of order.
+Taking advantage of the [free concurrency](../mlp) available in memory hardware, it can be beneficial to *prefetch* data that is likely to be accessed next if its location can be predicted. This is easy to do when there are no [data or control hazards](/hpc/pipelining/hazards) in the pipeline and the CPU can just run ahead of the instruction stream and execute memory operations out of order.
 
 But sometimes the memory locations aren't in the instruction stream, and yet they can still be predicted with high probability. In these cases, they can be prefetched by other means:
 
